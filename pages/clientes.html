@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="../styles/clientesStyles.css">
+<div class="contenedorClientes">
+    <h2>Formularios</h2>
+    <!-- Sección para sumar  -->
+    <div class="card">
+            <form class="formularioOperacion" data-operation="sumar" action="post">
+                <h3>Suma de valores</h3>
+                <input type="number" class="val1" placeholder="Ingresar un valor">
+                <input type="number" class="val2"   placeholder="Ingresar un valor">
+                <button class="submit" type="submit" value="sumar">Sumar</button>
+            </form>
+
+        <div class="contenedorResult">
+            <h3>Resultado:</h3>
+            <p><span id="resultado" name="sumar"></span></p>
+        </div>
+    </div>
+
+    <!-- Sección para multiplicar  -->
+    <div class="card">
+        <form class="formularioOperacion" data-operation="multiplicar" action="post">
+            <h3>Multiplicación de valores</h3>
+            <input type="number" class="val1"  placeholder="Ingresar un valor">
+            <input type="number" class="val2"  placeholder="Ingresar un valor">
+            <button class="submit" type="submit" value="multiplicar" >Multiplicar</button>
+        </form>
+
+        <div class="contenedorResult">
+            <h3>Resultado:</h3>
+            <p><span id="resultado" name="multiplicar"></span></p>
+        </div>
+</div>
+
+
+<div class="card" style="justify-content: center; flex-direction: column; display: flex;">
+    <h4>Menciona 3 lenguajes de lado del cliente:</h4>
+    <ul>
+        <li>Javascript</li>
+        <li>CSS</li>
+        <li>HTML</li>
+    </ul>
+</div>
+
+</div>
+
+<script src="../cliente.js"></script>
